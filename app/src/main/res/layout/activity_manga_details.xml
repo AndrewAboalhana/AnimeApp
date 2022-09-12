@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B4A4E"
+    tools:context=".manga.MangaDetails">
+
+    <ImageView
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:id="@+id/ivMangaDetails"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/itachi"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="Naruto"
+        android:textColor="@color/white"
+        android:lines="1"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:id="@+id/tvMangaDetailsTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivMangaDetails"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@+id/ivMangaDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="@dimen/_4sdp"
+        android:id="@+id/tvMangaDetails"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15ssp"
+        android:text="Manga Details :" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:src="@drawable/manga"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMangaDetails" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardElevation="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/tvMangaDetails"
+        app:layout_constraintStart_toStartOf="@id/tvMangaDetails"
+        android:backgroundTint="#4B4A4E"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tvMangaDescription"
+            android:textSize="@dimen/_15ssp"
+            android:lines="15"
+            android:textColor="#C38830"
+            android:text="The world-famous Swiss robot Montblanc has been violently murdered. Humans and robots around the world mourn for the beloved celebrity, made famous for his service in the 39th Asian War. Montblanc's popularity only grew in the following years after the war, thanks to his dedication to nature conservation, as well as his loving personality.
+
+Robotic Europol detective and war veteran Gesicht is sent to investigate Montblanc's tragic demise. Gesicht uncovers evidence of a mysterious entity known only as  Along with this, he learns of a plot to dismantle the eight specialized robots from around the world who participated in the war. Racing against time to save those who still remain, Gesicht grapples with his memory, morality, and a world full of hate, desperately attempting to defend the fragile coexistence of man and machine.
+
+[Written by MAL Rewrite]"/>
+
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
